@@ -26,30 +26,18 @@ NODE insert_rear(NODE first, int item)
     cur->link = temp;
     return first;
 }
-NODE delete_rear(NODE first)
+NODE delete_front(NODE first)
 {
-    NODE cur, prev;
+    NODE temp;
     if (first == NULL)
     {
-        printf("List is empty\n");
+        printf("Queue is empty\n");
         return first;
     }
-    if (first->link == NULL)
-    {
-        printf("The deleted element is %d\n", first->info);
-        free(first);
-        return NULL;
-    }
-    prev = NULL;
-    cur = first;
-    while (cur != NULL)
-    {
-        prev = cur;
-        cur = cur->link;
-    }
-    printf("The deleted element is %d\n", cur->info);
-    free(cur);
-    prev->link = NULL;
+    temp = first;
+    first = first->link;
+    printf("The deleted element is %d\n", temp->info);
+    free(temp);
 }
 
 void main()
