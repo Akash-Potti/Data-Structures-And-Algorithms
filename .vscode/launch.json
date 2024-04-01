@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Akash Potti/Downloads/DSA",
-      "program": "c:/Users/Akash Potti/Downloads/DSA/build/Debug/outDebug",
+      "cwd": "c:/Users/Akash Potti/Downloads/Data-Structures-And-Algorithms",
+      "program": "c:/Users/Akash Potti/Downloads/Data-Structures-And-Algorithms/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
